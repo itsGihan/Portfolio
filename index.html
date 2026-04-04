@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Minimal Digital Marketer Portfolio Website" />
+  <title>GM | Digital Marketer</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo" style="text-decoration: none; color: inherit;">Gihan<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+		<li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-text">
+        <p class="tag">Digital Marketer</p>
+
+        <h1>
+          I am <span class="name">Gihan</span><br>
+          <span id="typing-text" class="animated-text"></span>
+        </h1>
+
+       <p class="hero-services">
+		  Building brands through <br>
+		  <span>Social Media Management</span>
+		  <span class="dot">•</span>
+		  <span>Meta Ads</span>
+		  <span class="dot">•</span>
+		  <span>SEO</span>
+		</p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="assest/cv.pdf" class="btn btn-outline" target="_blank" download>Download CV</a>
+        </div>
+
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/itsgihan/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/gihann.me/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class=" floating-card">
+        <img src="assest/your-photo.png" alt="Gihan Madushanka" class="profile-image">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section reveal">
+    <div class="container about-grid">
+      
+      <div class="about-text">
+        <p class="section-tag">About Me</p>
+        <h2>Bridging tech & digital growth</h2>
+        <p class="section-text">
+          I don't just market brands; I understand the technology that powers them. With a strong foundation in IT, I bring a highly analytical, data-driven approach to digital marketing. My goal is to create strategies that don't just look good, but actually perform, rank, and convert.
+        </p>
+        <br>
+        <p class="section-text">
+          My journey started in tech, but my passion for growing businesses led me to the dynamic world of digital marketing. Whether it's optimizing a site for SEO or running targeted ad campaigns, I combine technical expertise with creative marketing solutions.
+        </p>
+      </div>
+
+      <div class="education-box card">
+        <h3>Education & Certifications</h3>
+        
+        <div class="edu-item">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div>
+            <h4>BICT(Honours) Degree</h4>
+            <p>University of Sri Jayewardenepura</p>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <i class="fa-brands fa-google"></i>
+          <div>
+            <h4>Digital Marketing Certification</h4>
+            <p>Google Digital Garage</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section reveal">
+    <div class="container">
+      <p class="section-tag">Services</p>
+      <h2>What I do</h2>
+      <div class="card-grid">
+        <div class="card-grid">
+        <div class="card">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <h3>SEO</h3>
+          <p>Keyword research, on-page SEO, technical optimization, and overall ranking improvements.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-bullhorn"></i>
+          <h3>Social Media Management</h3>
+          <p>Content planning, audience engagement, profile management, and brand growth support.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-bullseye"></i>
+          <h3>Paid Advertising</h3>
+          <p>Strategic Meta (Facebook/Instagram) and Google Ads campaigns to drive immediate traffic and sales.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <h3>Local SEO</h3>
+          <p>Google Business Profile optimization, local citations, and geo-targeted visibility.</p>
+        </div>
+		
+		<div class="card">
+          <i class="fa-solid fa-magnet"></i>
+          <h3>Lead Generation</h3>
+          <p>Targeted campaign support to attract high-quality inquiries and potential clients.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-lightbulb"></i>
+          <h3>Content Strategy</h3>
+          <p>Developing compelling digital content and copy to build trust and convert your visitors.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+	<section id="projects" class="section reveal">
+    <div class="container">
+      
+      <p class="section-tag">Projects</p>
+      <h2>Selected projects</h2><div class="slider-container">
+        <button class="slider-arrow prev-arrow" id="prevBtn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="slider-wrapper">
+          <div class="slider-track" id="sliderTrack">
+
+            <div class="slide">
+              <div class="project-card slide-card">
+                <div class="project-top">Social Media Management</div>
+                <div class="slide-images">
+                  <img src="assest/dreamscape-img1.png" alt="Dreamscape Post 1">
+                  <img src="assest/dreamscape-img2.png" alt="Dreamscape Post 2">
+                </div>
+                <h3>Dreamscape Decoration</h3>
+                <p>
+                  <strong>Niche:</strong> Event Planning<br>
+                  <strong>Results:</strong> 4K+ followers in just 6 months.<br><br>
+                  <strong>Strategy:</strong> Executed a full-scale social media management plan to build brand awareness from the ground up. Handled end-to-end content creation, including engaging video editing, custom post design, and creative ideation. Maximized reach through strategic scheduling, compelling captions, and targeted hashtag research.
+                </p>
+                <a href="https://web.facebook.com/dreamscapedecorations" class="btn btn-outline slide-btn">View More</a>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="project-card slide-card">
+                <div class="project-top">Web Development</div>
+                <div class="slide-images">
+                  <img src="assest/ai-review-img1.png" alt="AI Review Platform 1">
+                  <img src="assest/ai-review-img2.png" alt="AI Review Platform 2">
+                </div>
+                <h3>Review AI</h3>
+                <p>
+                  <strong>Context:</strong> University Project<br>
+                  <strong>Tech Stack:</strong> HTML5 & CSS3<br><br>
+                  <strong>Strategy:</strong> Designed and developed the complete front-end interface for an AI review aggregator. Focused on writing clean, semantic HTML and utilizing modern CSS styling to create a fully responsive, fast-loading, and intuitive user experience from scratch, without relying on heavy templates.
+                </p>
+                <a href="https://review-ai-web.github.io/review-ai/" class="btn btn-outline slide-btn">View More</a>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="project-card slide-card">
+                <div class="project-top">SEO</div>
+                <div class="slide-images">
+                  <img src="assest/seo-img1.png" alt="SEO Backlink Project 1">
+                  <img src="assest/seo-img2.png" alt="SEO Backlink Project 2">
+                </div>
+                <h3>SEO Link-Building Campaign</h3>
+                <p>
+                  <strong>Context:</strong> Real-World Client Project<br>
+                  <strong>Goal:</strong> Better Search Engine Ranking<br><br>
+                  <strong>Strategy:</strong> Executed a targeted backlink campaign to increase domain authority and drive organic traffic. Focused on securing high-quality, niche-relevant links to push the client's website higher in search results and ensure long-term, sustainable visibility.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="slider-arrow next-arrow" id="nextBtn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        
+      </div>
+
+  <!-- Contact -->
+  <section id="contact" class="section reveal">
+    <div class="container contact-box1">
+      <p class="section-tag">Contact</p>
+      <h2>Let’s work together</h2>
+      <p class="section-text2">
+        Need help with SEO, social media, or online business growth? Let’s connect.
+      </p>
+
+      <div class="hero-buttons center-btns">
+        <a href="mailto:madushankakmg@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="https://www.fiverr.com/users/faasmybizz/" target="_blank" class="btn btn-outline">Fiverr</a>
+        <a href="https://www.linkedin.com/in/itsgihan" target="_blank" class="btn btn-outline">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Gihan Madushanka | Digital Marketer</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+
+    function revealOnScroll() {
+      const windowHeight = window.innerHeight;
+      reveals.forEach((el) => {
+        const top = el.getBoundingClientRect().top;
+        if (top < windowHeight - 80) {
+          el.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+
+    // Typing animation
+    const words = [
+      "SEO Expert",
+      "Social Strategist",
+      "Growth Partner"
+    ];
+
+    let i = 0;
+    let j = 0;
+    let currentWord = "";
+    let isDeleting = false;
+    const typingText = document.getElementById("typing-text");
+
+    function type() {
+      currentWord = words[i];
+
+      if (isDeleting) {
+        typingText.textContent = currentWord.substring(0, j--);
+      } else {
+        typingText.textContent = currentWord.substring(0, j++);
+      }
+
+      if (!isDeleting && j === currentWord.length + 1) {
+        isDeleting = true;
+        setTimeout(type, 1200);
+        return;
+      }
+
+      if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % words.length;
+      }
+
+      setTimeout(type, isDeleting ? 60 : 100);
+    }
+
+    type();
+	// Project Slider Logic
+    const track = document.getElementById('sliderTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const slides = document.querySelectorAll('.slide');
+    let slideIndex = 0;
+
+    function updateSlider() {
+      // Moves the track left or right based on the index
+      track.style.transform = `translateX(-${slideIndex * 100}%)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      if (slideIndex < slides.length - 1) {
+        slideIndex++; // Go to next slide
+      } else {
+        slideIndex = 0; // Loop back to the first slide
+      }
+      updateSlider();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (slideIndex > 0) {
+        slideIndex--; // Go to previous slide
+      } else {
+        slideIndex = slides.length - 1; // Loop back to the last slide
+      }
+      updateSlider();
+    });
+  </script>
+
+</body>
+</html>
