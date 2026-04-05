@@ -580,17 +580,17 @@ body {
     color: var(--text);
   }
 
-  .nav-links {
-    position: absolute;
-    top: 72px;
-    left: 4%;
-    right: 4%;
-    background: #fffaf8;
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    padding: 20px;
+  .nav-links.show {
+    display: flex; 
     flex-direction: column;
-    display: none;
+    position: absolute;
+    top: 70px; /* Pushes it below the header */
+    left: 0;
+    width: 100%;
+    background: var(--card);
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-bottom: 1px solid var(--line);
   }
   
   /* Hide the Home button on mobile */
