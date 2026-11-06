@@ -592,7 +592,49 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     border-bottom: 1px solid var(--line);
   }
-  
+
+
+	@media (max-width: 768px) {
+
+    .experience-section,
+    .work-section {
+        padding: 65px 5%;
+    }
+
+    .experience-card {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 22px;
+    }
+
+    .experience-top {
+        flex-direction: column;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-image {
+        height: 230px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 400px) {
+    .work-image {
+        height: 190px;
+    }
+
+    .experience-content h3,
+    .work-info h3 {
+        font-size: 19px;
+    }
+}
+
   /* Hide the Home button on mobile */
   .nav-links li:first-child {
     display: none;
@@ -833,43 +875,3 @@ body {
    RESPONSIVE DESIGN
 ================================ */
 
-@media (max-width: 768px) {
-
-    .experience-section,
-    .work-section {
-        padding: 65px 5%;
-    }
-
-    .experience-card {
-        grid-template-columns: 1fr;
-        gap: 12px;
-        padding: 22px;
-    }
-
-    .experience-top {
-        flex-direction: column;
-    }
-
-    .work-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .work-image {
-        height: 230px;
-    }
-
-    .section-heading h2 {
-        font-size: 34px;
-    }
-}
-
-@media (max-width: 400px) {
-    .work-image {
-        height: 190px;
-    }
-
-    .experience-content h3,
-    .work-info h3 {
-        font-size: 19px;
-    }
-}
