@@ -609,3 +609,267 @@ body {
     min-height: 48px;
   }
 }
+
+
+/* ==============================
+   EXPERIENCE SECTION
+================================ */
+
+.experience-section,
+.work-section {
+    padding: 90px 7%;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-tag {
+    display: inline-block;
+    background: #fff0eb;
+    color: #e65d55;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 750;
+    letter-spacing: -1.5px;
+    color: #191919;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* EXPERIENCE CARDS */
+
+.experience-list {
+    max-width: 950px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-card {
+    display: grid;
+    grid-template-columns: 155px 1fr;
+    gap: 25px;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #eee5e1;
+    border-radius: 18px;
+    transition: transform .3s ease,
+                box-shadow .3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(0,0,0,.05);
+}
+
+.experience-date {
+    color: #e66c60;
+    font-size: 13px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.experience-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.experience-content h3 {
+    font-size: 21px;
+    color: #191919;
+    margin-bottom: 7px;
+}
+
+.experience-content h4 {
+    font-size: 14px;
+    color: #888;
+    font-weight: 500;
+}
+
+.experience-content p {
+    color: #737373;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.current-badge {
+    background: #eaf7ed;
+    color: #36834c;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tags span {
+    background: #f7f5f3;
+    color: #666;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+
+/* ==============================
+   SELECTED WORK SECTION
+================================ */
+
+.work-section {
+    background: #faf8f6;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.work-card {
+    background: #fff;
+    border: 1px solid #eee8e5;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform .3s ease,
+                box-shadow .3s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.07);
+}
+
+.work-image {
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+    background: #eee9e5;
+}
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.work-card:hover .work-image img {
+    transform: scale(1.04);
+}
+
+.work-category {
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    background: rgba(255,255,255,.94);
+    color: #e65d55;
+    padding: 9px 14px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.work-info {
+    padding: 25px;
+}
+
+.work-number {
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    color: #e66c60;
+    font-weight: 600;
+}
+
+.work-info h3 {
+    font-size: 22px;
+    color: #191919;
+    margin: 12px 0;
+}
+
+.work-info p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.work-info a {
+    color: #e65d55;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: gap .3s ease;
+}
+
+.work-info a:hover {
+    color: #191919;
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 768px) {
+
+    .experience-section,
+    .work-section {
+        padding: 65px 5%;
+    }
+
+    .experience-card {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 22px;
+    }
+
+    .experience-top {
+        flex-direction: column;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-image {
+        height: 230px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 400px) {
+    .work-image {
+        height: 190px;
+    }
+
+    .experience-content h3,
+    .work-info h3 {
+        font-size: 19px;
+    }
+}
